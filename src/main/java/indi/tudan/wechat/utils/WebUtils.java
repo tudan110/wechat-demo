@@ -1,5 +1,6 @@
 package indi.tudan.wechat.utils;
 
+import cn.hutool.core.util.ObjectUtil;
 import com.alibaba.fastjson.JSONObject;
 
 /**
@@ -26,11 +27,14 @@ public class WebUtils {
      * @return 返回结果 json 对象
      * @date 2019-12-04 10:05:29
      */
-    public static JSONObject result(JSONObject data, int status, String info) {
-        return new JSONObject()
-                .fluentPut("data", data)
-                .fluentPut("status", status)
-                .fluentPut("info", info);
+    public static JSONObject result(Object data, int status, String info) {
+        if (ObjectUtil.isNotEmpty(data)) {
+            return new JSONObject()
+                    .fluentPut("data", data)
+                    .fluentPut("status", status)
+                    .fluentPut("info", info);
+        }
+        return result(status, info);
     }
 
     /**

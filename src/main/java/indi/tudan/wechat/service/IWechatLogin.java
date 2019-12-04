@@ -14,13 +14,20 @@ public interface IWechatLogin {
      *
      * @date 2019-12-04 10:54:09
      */
-    void login();
+    boolean login();
 
     /**
      * 微信退出接口
      *
      * @date 2019-12-04 13:34:55
      */
-    void logout();
+    boolean logout();
+
+    /**
+     * 微信是否退出
+     *
+     * @date 2019-12-04 15:55:32
+     */
+    boolean isAlive();
 
 }

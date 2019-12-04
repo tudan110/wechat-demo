@@ -39,7 +39,7 @@ public class WeChatMessageController {
     public JSONObject sendMsgByUserName(@RequestParam(value = "userName") String userName,
                                         @RequestParam(value = "msg") String msg) {
         iWechatMessage.sendMsgByUserName(userName, msg);
-        return WebUtils.result(Const.HttpStatus.SUCCESS.getStatus(), msg);
+        return WebUtils.result(Const.HttpStatus.OK.getStatus(), msg);
     }
 
     /**
@@ -55,7 +55,7 @@ public class WeChatMessageController {
     public JSONObject sendMsgByNickName(@RequestParam(value = "nickName") String nickName,
                                         @RequestParam(value = "msg") String msg) {
         iWechatMessage.sendMsgByNickName(nickName, msg);
-        return WebUtils.result(Const.HttpStatus.SUCCESS.getStatus(), msg);
+        return WebUtils.result(Const.HttpStatus.OK.getStatus(), msg);
     }
 
     /**
@@ -71,7 +71,7 @@ public class WeChatMessageController {
     public JSONObject sendMsgByRemarkName(@RequestParam(value = "remarkName") String remarkName,
                                           @RequestParam(value = "msg") String msg) {
         iWechatMessage.sendMsgByRemarkName(remarkName, msg);
-        return WebUtils.result(Const.HttpStatus.SUCCESS.getStatus(), msg);
+        return WebUtils.result(Const.HttpStatus.OK.getStatus(), msg);
     }
 
     /**
@@ -87,7 +87,7 @@ public class WeChatMessageController {
     public JSONObject sendMsgByGroupName(@RequestParam(value = "groupName") String groupName,
                                          @RequestParam(value = "msg") String msg) {
         iWechatMessage.sendMsgByGroupName(groupName, msg);
-        return WebUtils.result(Const.HttpStatus.SUCCESS.getStatus(), msg);
+        return WebUtils.result(Const.HttpStatus.OK.getStatus(), msg);
     }
 
 }
