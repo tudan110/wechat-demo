@@ -1,5 +1,6 @@
 package indi.tudan.wechat.handler;
 
+import cn.zhouyafeng.itchat4j.beans.BaseMsg;
 import cn.zhouyafeng.itchat4j.face.IMsgHandlerFace;
 import com.alibaba.fastjson.JSONObject;
 
@@ -13,28 +14,42 @@ import com.alibaba.fastjson.JSONObject;
 public class WeChatMessageHandler implements IMsgHandlerFace {
 
     @Override
-    public String textMsgHandle(JSONObject jsonObject) {
+    public String textMsgHandle(BaseMsg baseMsg) {
         return "";
     }
 
     @Override
-    public String picMsgHandle(JSONObject jsonObject) {
+    public String picMsgHandle(BaseMsg baseMsg) {
         return "";
     }
 
     @Override
-    public String voiceMsgHandle(JSONObject jsonObject) {
+    public String voiceMsgHandle(BaseMsg baseMsg) {
         return "";
     }
 
     @Override
-    public String viedoMsgHandle(JSONObject jsonObject) {
+    public String viedoMsgHandle(BaseMsg baseMsg) {
         return "";
     }
 
     @Override
-    public String nameCardMsgHandle(JSONObject jsonObject) {
+    public String nameCardMsgHandle(BaseMsg baseMsg) {
         return "";
     }
 
+    @Override
+    public void sysMsgHandle(BaseMsg baseMsg) {
+
+    }
+
+    @Override
+    public String verifyAddFriendMsgHandle(BaseMsg baseMsg) {
+        return "";
+    }
+
+    @Override
+    public String mediaMsgHandle(BaseMsg baseMsg) {
+        return "";
+    }
 }
