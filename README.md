@@ -7,6 +7,8 @@ https://github.com/littlecodersh/ItChat
 
 https://github.com/yaphone/itchat4j
 
+https://github.com/lbbniu/WebWechat
+
 https://github.com/Urinx/WeixinBot
 
 ### 消息类型说明
